@@ -96,7 +96,7 @@ This project is licensed under the MIT License - see the `LICENSE` file for deta
 
 ## 📬 Contact
 
-Gitesh Malik - [@your_linkedin_profile](https://www.linkedin.com/giteshmalik1) - giteshmalikwork@gmail.com
+Gitesh Malik - [@Linkedin](www.linkedin.com/in/giteshmalik1) - giteshmalikwork@gmail.com
 
 Project Link: [https://github.com/evildead23151/echomind](https://github.com/evildead23151/echomind)
 
