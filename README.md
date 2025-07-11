@@ -1,50 +1,102 @@
-# Welcome to your Expo app 👋
+# EchoMind: Your AI-Powered Voice Journal
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![EchoMind Banner](https://place-hold.it/1200x600/8A2BE2/FFFFFF?text=EchoMind&fontsize=110)
 
-## Get started
+**EchoMind is a voice-first journaling application that transforms your spoken thoughts into structured, searchable, and insightful notes. It's built for capturing fleeting ideas, daily reflections, and brainstorming sessions without ever touching a keyboard.**
 
-1. Install dependencies
+This project is more than a simple transcriber; it's an experiment in creating a more natural and intelligent interface for personal knowledge management.
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Core Features
 
-   ```bash
-   npx expo start
-   ```
+- **Instant Voice Capture:** A clean, intuitive interface to instantly record your thoughts, powered by Expo AV.
+- **AI-Powered Transcription:** High-accuracy speech-to-text conversion using the AssemblyAI API.
+- **Modern, Responsive UI:** A polished and beautiful user interface built with React Native.
+- **Secure API Handling:** API keys are managed securely using environment variables, not hardcoded into the source.
+- **Cross-Platform:** Built with Expo, EchoMind is designed to run seamlessly on both iOS and Android from a single codebase[1].
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🛠️ Tech Stack & Architecture
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+This project is built with a modern, scalable stack chosen for rapid development and a high-quality user experience.
 
-## Get a fresh project
+| Category          | Technology                                                                                                  |
+| ----------------- | ----------------------------------------------------------------------------------------------------------- |
+| **Mobile**        | [React Native](https://reactnative.dev/), [Expo](https://expo.dev)                                           |
+| **AI / Services** | [AssemblyAI](https://www.assemblyai.com/) (Speech-to-Text)                                                    |
+| **State Mgmt**    | React Hooks (`useState`, `useContext`)                                                                        |
+| **Navigation**    | [Expo Router](https://docs.expo.dev/router/introduction/) (File-based routing)                              |
+| **Styling**       | React Native StyleSheet                                                                                     |
+| **Linting**       | ESLint, Prettier                                                                                            |
+| **Security**      | `react-native-dotenv` for environment variable management                                                   |
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
-```
+## ⚙️ Getting Started
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Follow these instructions to get a local copy up and running for development and testing purposes.
 
-## Learn more
+### Prerequisites
 
-To learn more about developing your project with Expo, look at the following resources:
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
+- An account with [AssemblyAI](https://www.assemblyai.com/) to get a free API key.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Installation & Setup
 
-## Join the community
+1.  **Clone the repository:**
+    ```
+    git clone https://github.com/evildead23151/echomind.git
+    cd echomind
+    ```
 
-Join our community of developers creating universal apps.
+2.  **Install project dependencies:**
+    ```
+    npm install
+    ```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+3.  **Set up your environment variables:**
+    -   Create a new file in the root of the project named `.env`.
+    -   This file will store your secret API keys and is ignored by Git.
+    -   Add your AssemblyAI key to the file:
+        ```
+        # File: .env
+        ASSEMBLYAI_API_KEY="your_assemblyai_api_key_goes_here"
+        ```
+
+4.  **Run the application:**
+    -   Start the Expo development server:
+        ```
+        npx expo start
+        ```
+    -   Scan the QR code with the **Expo Go** app on your iOS or Android device.
+
+The app should now be running on your phone, connected to the development server.
+
+---
+
+## 📈 Project Status & Roadmap
+
+EchoMind is currently in active development. The core functionality of recording and transcribing is complete.
+
+### Next Steps:
+- [ ] **Local Storage:** Implement `AsyncStorage` to save notes persistently on the device.
+- [ ] **Journal Feed:** Redesign the home screen to display a list of all saved journal entries.
+- [ ] **Summarization:** Integrate an LLM (like GPT-4) to provide intelligent summaries of transcribed notes.
+- [ ] **Search & Filtering:** Add functionality to search through past entries.
+- [ ] **Cloud Sync:** Explore options for syncing journal entries across devices.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the `LICENSE` file for details.
+
+## 📬 Contact
+
+Gitesh Malik - [@your_linkedin_profile](https://www.linkedin.com/) - giteshmalik23151@gmail.com
+
+Project Link: [https://github.com/evildead23151/echomind](https://github.com/evildead23151/echomind)
+
